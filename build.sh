@@ -24,7 +24,7 @@ LOADERCONF="$SRCDIR/$LOADERMID.js"
 PROFILE="$SRCDIR/app/app.profile.js"
 
 # Get the current revision number from the current working copy
-REVISION=`svn info | sed -ne 's/^Revision: //p'`
+#REVISION=`svn info | sed -ne 's/^Revision: //p'`
 
 # Configuration over. Main application start up!
 
@@ -63,14 +63,14 @@ LOADERMID=${LOADERMID//\//\\\/}
 sudo chmod 777 $DISTDIR
 
 # Copy & minify index.html to dist
-sudo sh -c "cat $SRCDIR/index.html | sed s/__REVISION__/$REVISION/ | tr '\n' ' ' | perl -pe '
+sudo sh -c "cat $SRCDIR/index.html | sed s/__REVISION__/revision/ | tr '\n' ' ' | perl -pe '
   s/<\!--.*?-->//g;                          # Strip comments
   s/isDebug: *1/deps:[\"$LOADERMID\"]/;        # Remove isDebug, add deps
   s/<script src=\"$LOADERMID.*?\/script>//;  # Remove script app/run
   s/\s+/ /g;                                 # Collapse white-space' > $DISTDIR/index.html"
   
   
-sudo echo "Build $REVISION on $(date)" >> ./log.txt
+#sudo echo "Build $REVISION on $(date)" >> ./log.txt
 
 sudo mv ./log.txt $DISTDIR/log.txt
 
