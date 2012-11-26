@@ -1,0 +1,283 @@
+@import "../../dijit/themes/claro/variables";
+@import "../../dijit/themes/drivercheck/icons/commonIcons.css";
+@import "../../dijit/themes/drivercheck/icons/commonIcons_rtl.css";
+
+/**
+ * If you are developing a project that makes use of Dijit widgets, you will probably want to include the two files
+ * below; otherwise, you can remove them. When building for release, Dojo will automatically combine all of your
+ * @imported CSS files into a single file.
+ *
+ * It is highly, highly recommended that you develop your CSS using LESS: http://lesscss.org.
+ */
+
+@import '../../dojo/resources/dojo.css';
+@import '../../dijit/themes/claro/claro.css';
+
+/*
+ * Dgrid
+ */
+@import "../../dgrid/css/dgrid.css";
+@import "../../dgrid/css/skins/claro.css";
+
+/*
+ * FloatingPane
+ */
+@import "../../dojox/layout/resources/FloatingPane.css";
+@import "../../dojox/layout/resources/ResizeHandle.css";
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #231f1e;
+    padding: 0;
+}
+
+h2{
+    margin-top: 5px; 
+    margin-bottom: 0;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1em; 
+    font-weight: bold; 
+    line-height: 1.5em; 
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+tr{
+  height: 25px;
+}
+
+form td{
+  width: 150px;
+  vertical-align:middle;
+  padding-right: 10px;
+}
+
+td[label]{
+  text-align: right;
+  font-weight:bold;
+}
+
+.drivercheck .moduleLoader{
+  padding: 0;
+}
+
+.drivercheck .gridButtons{
+  padding: 0;
+  margin-top: 5px;
+}
+
+.filterForm tr{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.filterForm td{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.drivercheck .filterForm .edgePanel{
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.drivercheck .modifiedLabel{
+  color: #000000;
+  background-color: yellow;
+  padding: 1px;
+  marging-left: 3px;
+}
+
+.drivercheck .activeUsersLabel{
+  color: #FFFFFF;
+  background-color: red;
+  padding: 1px;
+}
+
+.drivercheck .link{
+  border-bottom:1px solid @button-background-color;
+  padding-right: 1px; 
+  color: @button-background-color;
+  cursor:pointer; 
+  display:inline-block;
+  
+  &:hover{
+    border-bottom:1px solid @unfocused-clickable-color;
+    color: @unfocused-clickable-color;
+  }
+}
+
+
+.drivercheck .permissionTable tr{
+  height: 40px;
+}
+.drivercheck .permissionTable td{
+  padding-left: 10px;
+}
+
+.drivercheck .moreInfo ul{
+  list-style-type: none;
+  padding:5px;
+}
+
+.drivercheck .noOutline{
+  outline: none;
+}
+
+#topLevelModule {
+    height: 100%;
+}
+#appLayout {
+    height: 100%;
+}
+#leftCol {
+    width: 14em;
+}
+
+#viewsChart {
+	width: 550px;
+	height: 550px;
+}
+
+.drivercheck .secondayColoredBackground{
+    background-color: @secondary-color;
+}
+
+.drivercheck .panel{
+    padding: 8px; 
+    display: block; 
+    overflow: auto;
+}
+
+.drivercheck .edgePanel {
+    .drivercheck .secondayColoredBackground;  
+    .drivercheck .panel;
+}
+
+.drivercheck .leftArrowOffset{
+  background-position: -77px 53%;
+}
+
+.drivercheck .whitePanel {
+    background-color: #ffffff;
+    .drivercheck .panel;
+    /*background-color: #c9192a;*/
+}
+
+.drivercheck .coloredPanel {
+    /*background-color: #231f1e;*/
+    background-color: @primary-color;
+    .drivercheck .panel;
+}
+
+
+.logo{
+	background-image: url('anditcametopass.png');
+	background-repeat:no-repeat;
+}
+.checkmark{
+	background-image: url('checkmark.png');
+	background-repeat:no-repeat;
+}
+
+.checkmark_red{
+  background-image: url('checkmark_red.png');
+  background-repeat:no-repeat;
+  width:15px; 
+  height:12px;
+}
+
+/*
+.dgrid-row-odd {
+    .drivercheck .secondayColoredBackground;  
+}
+
+.dgrid-cell {
+    border: none;
+}
+*/
+
+.dgrid-row-odd {
+    background-color: #F2F5F9;
+}
+
+.field-content {
+   width: 300px;
+}
+.field-videos {
+   width: 100px;
+}
+.field-illustrations {
+   width: 80px;
+}
+
+
+.lockedRow{
+  background-image: url('lock.png');
+  background-repeat:no-repeat;
+  padding-left: 15px;
+}
+
+.always_on_top{
+	position:relative;
+	z-index: 999999;
+}
+
+.spinner_container{
+  width:100%;
+  height:100%;
+}
+
+.spinner{
+	background-image: url('spinner.gif');
+	background-repeat:no-repeat;
+	.always_on_top;
+	width:32px; 
+	height:32px;
+	left: 50%;
+	top:50%;
+}
+
+.logo_small{
+	background-image: url('anditcametopass_small.png');
+	background-repeat:no-repeat;
+}
+
+.coloredLabel{
+  color: @button-background-color;
+}
+
+.drivercheck .note_label{
+  color: darken(@secondary-color, 65);
+  font-size: small;
+  font-style: italic;
+}
+
+.dc_dialog{
+  margin-bottom: 40px;
+}
+
+.pad10{
+	padding: 10px;
+}
+
+.padBottom10{
+	padding-bottom: 10px;
+}
+
+.paddingTopAndBottomOnly{
+  padding: 10px 0;
+}
+
+.floatRight{
+	float:right;
+}
+
+.floatLeft{
+	float:left;
+}

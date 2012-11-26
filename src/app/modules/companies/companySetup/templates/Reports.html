@@ -1,0 +1,19 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'" style="margin-bottom: 10px;">
+	
+	<h3 style="margin-top: 10px;">Delivery Method</h3>
+	<fieldset style="margin-top: 10px; margin-left: 10px;" data-dojo-attach-point="frequency" class="dijitInline">
+		<input type="radio" name="delivery_method" data-dojo-attach-point="delivery_fax" value="delivery_fax" dojoType="dijit.form.RadioButton" /><label for="delivery_fax">Fax</label>
+		<input type="radio" name="delivery_method" data-dojo-attach-point="delivery_email" value="delivery_email" dojoType="dijit.form.RadioButton" /><label for="delivery_email">Email</label>
+	</fieldset>
+	
+	<h3 style="margin-top: 20px;">Other</h3>
+ 	<div style="margin-top: 10px; margin-left: 10px;">
+		<input type="checkBox" name="requires_cert_letter" data-dojo-attach-point="requires_cert_letter" value="1" dojoType="dijit.form.CheckBox" /> 
+		<label for="requires_cert_letter">Requires Certification Letter</label>
+	</div>
+ 	<div style="margin-top: 10px; margin-left: 10px;">
+		<input type="checkBox" name="send_random_list" data-dojo-attach-point="send_random_list" value="1" dojoType="dijit.form.CheckBox" /> 
+		<label for="send_random_list">Send Random List</label>
+	</div>
+	
+</div>

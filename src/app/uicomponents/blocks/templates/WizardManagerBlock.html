@@ -1,0 +1,37 @@
+<div class="moduleContainer">
+	<span class="floatRight modifiedLabel" style="margin-top: -10px;" data-dojo-attach-point="_modified_label">modified</span>
+	<span class="floatRight activeUsersLabel" style="margin-top: -10px; display:none;" data-dojo-attach-point="_users_active_label">active users</span>
+	<div data-dojo-attach-point="title_div" class="floatLeft" style="padding-bottom: 10px;"><h2><span data-dojo-attach-point="title_node">{title}</span></h2></div>
+	
+	<div style="clear: both;" class="centerPanel" data-dojo-attach-point="_tabs" data-dojo-type="dijit.layout.TabContainer" data-dojo-props="region: 'center'" nested="true" doLayout="false"></div>
+	
+    <div class="edgePanel" style="padding-top: 5px; padding-bottom: 5px;">
+    	
+		<div class="floatLeft" data-dojo-type="dijit.form.Button" iconClass="dijitArrowButtonInner leftArrowOffset" data-dojo-attach-point="_prevBtn">
+		    Previous
+		</div>
+		<div class="floatLeft" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_cancelBtn">
+		    Cancel
+		</div>
+		<div class="floatRight" data-dojo-type="app.form.ArrowButton" data-dojo-attach-point="_nextBtn">
+		    Next
+		</div>
+		<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_saveBtn">
+		    Save
+		</div>
+		<div class="floatRight" data-dojo-type="dijit.form.Button" iconClass="dijitIconEditTask" data-dojo-attach-point="_instructionsBtn" title="Instructions" ></div>
+		<div class="floatRight" data-dojo-type="dijit.form.Button" iconClass="dijitIconTask" data-dojo-attach-point="_notesBtn" title="Notes" ></div>
+	</div>
+	
+	<div dojoType="app.layout.FloatingPane" title="Instructions" resizable="true" dockable="true" closable="false" data-dojo-attach-point="_instructions" style="padding:0px; overflow: hidden; position:absolute;" duration="300">
+		<div data-dojo-attach-point="instructionsWidget" style="border: none; padding: 10px;"></div>
+	</div>
+	<div dojoType="app.layout.FloatingPane" title="Notes" resizable="true" dockable="true" closable="false" dockable="false" data-dojo-attach-point="_notes" style="padding:0px; overflow: hidden; position:absolute;" duration="300">
+		<!--<div data-dojo-attach-point="notes_node" style="border: none; padding: 10px;">-->
+			<div data-dojo-attach-point="notesWidget" data-dojo-type="app.uicomponents.Notes" style="width:100%; height:85%;"/>
+		<!--</div>-->
+	</div>
+	
+	
+</div>
+		

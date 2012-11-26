@@ -1,0 +1,61 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	<h3>Order Defaults</h3>
+
+	<form dojoType="app.form.Manager" data-dojo-attach-point="testTemplatesForm" method="post">
+		<table style="border-spacing: 0;" cellpadding="10" cellspacing="10">
+			<tr vertical-align="middle">
+				<td style="padding-right: 10px;">
+					<select class="floatRight" data-dojo-attach-point="reasonCombo" name="reason" $ref="reason" style="width: 160px;" dojoType="app.form.FilteringSelect" placeholder="Test reason"></select>
+				</td>
+				<td style="padding-right: 10px;">
+					<input type="radio" name="collection_type" value="POCT" observer="refreshUI" dojoType="dijit.form.RadioButton" /><label>Point of Care</label>
+				</td>
+				<td style="padding-right: 5px;">
+					<input type="radio" name="collection_type" value="LAB" observer="refreshUI" dojoType="dijit.form.RadioButton" /><label>Lab</label>
+				</td>
+				<td style="padding-right: 10px;">
+					<select class="floatRight"  data-dojo-attach-point="labCombo" name="lab" $ref="lab"  style="width: 100px;" disabled="disabled" dojoType="app.form.FilteringSelect" placeholder="Lab"></select>
+				</td>
+				<td style="padding-right: 10px;">
+					<select class="floatRight"  data-dojo-attach-point="sampleTypeCombo" name="sample_type" $ref="sample_type"  style="width: 80px;" dojoType="app.form.FilteringSelect" placeholder="Sample type"></select>
+				</td>
+				<td style="padding-right: 10px;">
+					<select class="floatRight"  data-dojo-attach-point="batteryCombo" name="battery" $ref="battery"  style="width: 80px;" dojoType="app.form.FilteringSelect" placeholder="Battery"></select>
+				</td>
+				<td>
+					<input type="checkBox" name="fixed" value="true" dojoType="dijit.form.CheckBox"  /><label>Fixed</label>
+				</td>
+				<td>
+					<button class="floatRight pad10" dojoType="dijit.form.Button" data-dojo-attach-point="addBookingReasonButton" style="padding-right: 0;">Add</button>
+				</td>
+			</tr>
+			<!--
+			<tr>
+				<td colspan="6">
+					<div class="floatRight" data-dojo-type="dijit.form.DropDownButton" data-dojo-attach-point="moreTestTemplatesButton">
+					    <span>More...</span>
+					    <div class="noOutline" data-dojo-type="app.modules.companies.companySetup.configServices.MoreTestTemplates" data-dojo-attach-point="moreTestTemplatesDialog"></div>
+					</div>
+				</td>
+			</tr>
+			-->
+		</table>
+	</form>
+	
+	<table data-dojo-type="dgrid.Grid" data-dojo-attach-point="bookingReasonHelpGrid" style="height: 150px;">
+		<tr>
+			<th data-dgrid-column="{field:'reason.name', sortable:false, renderCell:app.store.GridFormatters.nestedObjectRenderer}">Reason</th>
+			<th data-dgrid-column="{field:'collection_type.name', sortable:false,  renderCell:app.store.GridFormatters.nestedObjectRenderer}">Collection</th>
+			<th data-dgrid-column="{field:'sample_type.name', sortable:false, renderCell:app.store.GridFormatters.nestedObjectRenderer}">Sample Type</th>
+			<th data-dgrid-column="{field:'battery.name', sortable:false, renderCell:app.store.GridFormatters.nestedObjectRenderer}">Battery</th>
+			<th data-dgrid-column="{field:'fixed', sortable:false}">Fixed</th>
+		</tr>
+	</table>
+	
+	<div class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+		<div class="floatLeft" data-dojo-type="dijit.form.Button" data-dojo-attach-point="deleteTestTemplateBtn">
+    	    Delete Selected
+    	</div>
+    </div>
+	
+</div>

@@ -1,0 +1,27 @@
+<div class="dc_dialog">
+	<form class="pad10" dojoType="dijit.form.Form" data-dojo-attach-point="configureSalesRepForm" method="post">
+		
+		<table cellpadding="10" cellspacing="5">
+			<tr>
+				<td><input type="checkBox" name="primary_sales_rep_box" value="1" data-dojo-attach-point="primary_sales_rep_box" dojoType="dijit.form.CheckBox" /></td> 
+				<td><label>Primary:</label></td>
+				<td><input type="text" name="primary_sales_rep" data-dojo-attach-point="primary_sales_rep" placeholder="John Smith" dojoType="dijit.form.TextBox" />
+				<td><label>Commission:</label></td>
+				<td><input name="primary_commission" data-dojo-attach-point="primary_commission" value="100" smallDelta="10" constraints="{min:0,max:100,places:0}" data-dojo-type="dijit.form.NumberSpinner" style="width: 50px" /></td>
+				<td><label>%</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkBox" name="secondary_sales_rep_box" value="1" data-dojo-attach-point="secondary_sales_rep_box" dojoType="dijit.form.CheckBox" /></td> 
+				<td><label>Secondary:</label></td>
+				<td><input type="text" name="secondary_sales_rep" data-dojo-attach-point="secondary_sales_rep" placeholder="John Doe" dojoType="dijit.form.TextBox" /></td>
+				<td><label>Commission:</label></td>
+				<td><input name="secondary_commission" data-dojo-attach-point="secondary_commission" value="0" smallDelta="10" constraints="{min:0,max:100,places:0}" data-dojo-type="dijit.form.NumberSpinner" style="width: 50px" /></td>
+				<td><label>%</label></td>
+			</tr>
+		</table>
+		
+		<button class="floatRight pad10" dojoType="dijit.form.Button" data-dojo-attach-point="submitSalesRepsButton">Submit</button>
+		
+	</form>
+</div>	
+	

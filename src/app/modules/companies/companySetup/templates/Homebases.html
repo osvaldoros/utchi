@@ -1,0 +1,35 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'" style="margin-bottom: 10px;">
+		
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="companyHomebasesForm" method="post">
+		
+		<div class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+			<input type="checkBox" name="has_homebases" data-dojo-attach-point="has_homebases" observer="recordChange" value="true" dojoType="dijit.form.CheckBox" /> <label for="has_homebases">Has homebases</label>
+		</div>
+		
+		<div class="includeInStates homebases">
+			<div class="edgePanel">
+			 	<table data-dojo-attach-point="homebasesGrid" data-dojo-type="dgrid.Grid" style="height: 250px;" data-dojo-attach-point="homebasesGrid">
+					<tr>
+						<th data-dgrid-column="{field:'name', sortable:true}">Name</th>
+						<th data-dgrid-column="{field:'phone', sortable:true}">Phone</th>
+						<th data-dgrid-column="{field:'email', sortable:false}">Email</th>
+						<th data-dgrid-column="{field:'city', sortable:false}">City</th>
+					</tr>
+				</table>
+				
+				<div class="centerPanel" style="padding-top: 10px;">
+					<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="addHomebasesBtn" data-dojo-attach-point="addHomebasesBtn">
+			    	    New Homebase
+			    	</div>
+					<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="editHomebasesBtn" data-dojo-attach-point="editHomebasesBtn">
+			    	    Edit Homebase
+			    	</div>
+					<div class="floatLeft" data-dojo-type="dijit.form.Button" data-dojo-attach-point="deleteHomebasesBtn" data-dojo-attach-point="deleteHomebasesBtn">
+			    	    Delete Selected
+			    	</div>
+			    </div>
+		    </div>
+		</div>
+	</form>
+	
+</div>

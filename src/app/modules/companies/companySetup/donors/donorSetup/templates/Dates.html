@@ -1,0 +1,21 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	
+	<form dojoType="app.form.Manager" data-dojo-attach-point="donorDatesInfoForm" method="post">
+		<table cellpadding="0" cellspacing="2">
+			<tr>
+				<td vertical-align="middle"><strong>Hire date:  </strong></td>
+				<td><input type="text" name="hire_date" observer="recordChange" dojoType="dijit.form.DateTextBox" value="7/5/1983" /></td>
+			</tr>
+			<tr>
+				<td vertical-align="middle"><strong>Termination date:  </strong></td>
+				<td><input type="text" name="term_date" observer="recordChange" dojoType="dijit.form.DateTextBox" value="7/5/1983" /></td>
+			</tr>
+			<tr>
+				<td vertical-align="middle"><strong>Last physical date:  </strong></td>
+				<td><input type="text" name="last_physical_date" observer="recordChange" dojoType="dijit.form.DateTextBox" value="7/5/1983" /></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+</div>

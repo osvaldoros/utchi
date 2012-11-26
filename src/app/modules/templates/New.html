@@ -1,0 +1,28 @@
+<div class="moduleContainer">
+	<h2>Type in a story </h2>
+
+	<br/>
+
+	<div style="width:491px;">
+		<table cellpadding="0" cellspacing="2">
+			<tr>
+				<td style="font-weight:bold;">Title: </td>
+			</tr>
+			<tr>
+				<td><input type="text" required="true" name="storyTitle" data-dojo-attach-point="storyTitle" placeholder="An awesome title" dojoType="dijit.form.ValidationTextBox" missingMessage="Please enter a title" /></td>
+			</tr>
+			<tr>
+				<td style="font-weight:bold;">Content: </td>
+			</tr>
+			<tr>
+				<td><div data-dojo-attach-point="storyContent" name="storyContent" data-dojo-type="app.uicomponents.Editor" data-dojo-props="editorHeight:'400px'"></div></td>
+	        </tr>
+	    </table>
+
+	    <button class="floatRight pad10" dojoType="dijit.form.Button" data-dojo-attach-point="saveButton">Save</button>
+	<div/>
+
+	
+	
+</div>
+		

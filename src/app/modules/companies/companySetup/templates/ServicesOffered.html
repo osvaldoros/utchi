@@ -1,0 +1,138 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="companyServicesForm" method="post">
+		<table cellpadding="10" cellspacing="0">
+			<tr>
+				<td class="coloredLabel" valign="top" rowspan="3" style="padding-right: 20px;">Drug & Alcohol</td>
+				<td></td>
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td vertical-align="middle">
+					<input type="checkBox" name="drug_box" data-dojo-attach-point="drug_box" data-dojo-attach-point="drug_box" value="true" dojoType="dijit.form.CheckBox" /> 
+					<label for="drug_box">Drug</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureDrugButton" data-dojo-attach-point="configureDrugButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td vertical-align="middle">
+					<input type="checkBox" name="alcohol_box" data-dojo-attach-point="alcohol_box" data-dojo-attach-point="alcohol_box" value="true" dojoType="dijit.form.CheckBox" /> 
+					<label for="drug_and_alcohol">Alcohol</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureAlcoholButton" data-dojo-attach-point="configureAlcoholButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td  class="coloredLabel" valign="top" rowspan="6">Medical</td>
+				<td></td>
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td  vertical-align="middle">
+					<input type="checkBox" name="physical_box" data-dojo-attach-point="physical_box" data-dojo-attach-point="physical_box" value="true" dojoType="dijit.form.CheckBox" /> 
+					<label for="physical_box">Physical Exam</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configurePhysicalExamButton" data-dojo-attach-point="configurePhysicalExamButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr>
+				<td  vertical-align="middle">
+					<input type="checkBox" name="bio_mon_box" data-dojo-attach-point="bio_mon_box" data-dojo-attach-point="bio_mon_box" value="true" dojoType="dijit.form.CheckBox" /> 
+					<label for="bio_mon_box">Biological Monitoring</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureBiologicalMonitoringButton" data-dojo-attach-point="configureBiologicalMonitoringButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td  vertical-align="middle">
+					<input type="checkBox" name="audio_box" data-dojo-attach-point="audio_box" value="true" data-dojo-attach-point="audio_box" dojoType="dijit.form.CheckBox" /> 
+					<label for="audio">Audio</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureAudioButton" data-dojo-attach-point="configureAudioButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr>
+				<td><input type="checkBox" name="equipment_box" data-dojo-attach-point="equipment_box" value="true" data-dojo-attach-point="equipment_box" dojoType="dijit.form.CheckBox" /> <label for="equipment">Equipment</label></td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureEquipmentButton" data-dojo-attach-point="configureEquipmentButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td  vertical-align="middle">
+					<input type="checkBox" name="sleep_box" data-dojo-attach-point="sleep_box" value="true" data-dojo-attach-point="sleep_box" dojoType="dijit.form.CheckBox" /> 
+					<label for="sleep">Sleep</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureSleepButton" data-dojo-attach-point="configureSleepButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr>
+				<td  class="coloredLabel" valign="top" rowspan="5">Other</td>
+				<td></td>
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td vertical-align="middle">
+					<input type="checkBox" name="fingerprint_box" data-dojo-attach-point="fingerprint_box" value="true" data-dojo-attach-point="fingerprint_box" dojoType="dijit.form.CheckBox" />
+					<label for="fingerprint">Fingerprint</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureFingerprintButton" data-dojo-attach-point="configureFingerprintButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr>
+				<td vertical-align="middle" style="padding-right: 20px;">
+					<input type="checkBox" name="eap_box" data-dojo-attach-point="eap_box" value="true" data-dojo-attach-point="eap_box" dojoType="dijit.form.CheckBox" /> 
+					<label for="eap">Employee Assistance Program (EAP)</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureEAPButton" data-dojo-attach-point="configureEAPButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td vertical-align="middle">
+					<input type="checkBox" name="sap_box" data-dojo-attach-point="sap_box" value="true" data-dojo-attach-point="sap_box" dojoType="dijit.form.CheckBox" /> 
+					<label for="sap">Substance Abuse Professional (SAP)</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureSAPButton" data-dojo-attach-point="configureSAPButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+			<tr>
+				<td vertical-align="middle" style="padding-right: 20px;">
+					<input type="checkBox" name="supervisor_training_box" data-dojo-attach-point="supervisor_training_box" value="true" data-dojo-attach-point="supervisor_training_box" dojoType="dijit.form.CheckBox" /> 
+					<label for="supervisor_training_box">Supervisor Training</label>
+				</td>
+				<td valign="top">
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureSTButton" data-dojo-attach-point="configureSTButton" iconClass="dijitIconFunction">
+					    Configure
+					</div>
+				</td>				
+			</tr>
+
+		</table>
+	</form>
+	
+</div>

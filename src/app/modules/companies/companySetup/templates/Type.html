@@ -1,0 +1,44 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="companyTypeForm" method="post">
+			
+		<h3 style="margin-top: 20px;">Main Categories</h3>
+		<table cellpadding="10" cellspacing="10">
+			<tr>
+				<td><input type="checkBox" name="dot" value="true" dojoType="dijit.form.CheckBox" observer="recordChange" /> <label for="it">DOT</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="workplace" value="true" dojoType="dijit.form.CheckBox" observer="recordChange" /> <label for="workplace">Workplace</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="cas" value="true" dojoType="dijit.form.CheckBox" observer="recordChange" /> <label for="cas">CAS</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="wellness" value="true" dojoType="dijit.form.CheckBox" observer="recordChange" /> <label for="wellness">Wellness</label></td>
+			</tr>
+		</table>	
+		
+		<h3 style="margin-top: 20px;">Imperial Oil</h3>
+		<table cellpadding="10" cellspacing="10">
+			<tr>
+				<td><input type="checkBox" name="iol_contractor_box" data-dojo-attach-point="iol_contractor_box" value="true"  observer="recordChange" dojoType="dijit.form.CheckBox" /> <label for="it">Contractor</label></td>
+				<td vertical-align="middle">Job Class</td>
+				<td>
+					<select class="floatRight" data-dojo-attach-point="iol_contractor_type" name="iol_contractor_type" disabled="disabled" dojoType="dijit.form.ComboBox"  observer="recordChange" autocomplete="true">
+						<option selected="selected">Non-sensitive</option>
+						<option>Safety Sensitive</option>
+						<option>Risk Sensitive</option>
+					</select>
+				</td>
+				<td vertical-align="middle"></td>
+				<td><input type="checkBox" name="iol_sales_associate_box" data-dojo-attach-point="iol_sales_associate_box"  value="true" observer="recordChange" dojoType="dijit.form.CheckBox" /> <label for="workplace">Sales Associate</label></td>
+				<td>
+					<select class="floatRight" data-dojo-attach-point="iol_sales_associate_type" name="iol_sales_associate_type" dojoType="dijit.form.ComboBox" disabled="disabled"  observer="recordChange" autocomplete="true">
+						<option selected="selected">Agents</option>
+						<option>General Aviation</option>
+						<option>Resellers</option>
+					</select>
+				</td>
+			</tr>
+		</table>	
+	
+	</form>
+	
+</div>

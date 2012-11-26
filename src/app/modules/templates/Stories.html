@@ -1,0 +1,24 @@
+<div class="moduleContainer">
+	<h2>Stories</h2>
+	
+	<br/>
+
+ 	<table data-dojo-type="dgrid.Grid" data-dojo-attach-point="_grid" style="clear: both;">
+		<tr>
+			<th data-dgrid-column="{field:'title', sortable:true}">Title</th>
+			<th data-dgrid-column="{field:'content', sortable:false, renderCell: app.store.GridFormatters.peakRenderer}">Peak</th>
+			<th data-dgrid-column="{field:'videos', sortable:true, renderCell: app.store.GridFormatters.nestedObjectCount}">Narrations</th>
+			<th data-dgrid-column="{field:'comments', sortable:true, renderCell: app.store.GridFormatters.nestedObjectCount}">Comments</th>
+			<th data-dgrid-column="{field:'created_by', sortable:false}">Added by</th>
+		</tr>
+	</table>
+
+	<div class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+		<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_selectBtn">
+    	    View
+    	</div>
+    </div>	
+
+	
+</div>
+		

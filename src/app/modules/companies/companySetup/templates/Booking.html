@@ -1,0 +1,19 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'" style="margin-bottom: 5px;" accesskey="">
+	
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="companyBookingForm" method="post">
+		<h3 style="margin-bottom: 2px; margin-top: 2px;">Booking Instructions</h3>
+		<div data-dojo-attach-point="booking_instr" name="booking_instr" data-dojo-type="app.uicomponents.Editor" observer="recordChange" ></div>
+		
+		<h3 style="margin-bottom: 2px; margin-top: 2px;">Test Requisition Instructions</h3>
+		<div class="centerPanel" data-dojo-attach-point="testReqTabs" data-dojo-attach-point="testReqTabs" data-dojo-type="dijit.layout.TabContainer" data-dojo-props="region: 'center'" nested="true" style="height: 220px;">
+			<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="title: 'English'" style="padding: 0; margin-top: -1px;">
+				<div data-dojo-attach-point="test_req_instr_en" name="test_req_instr_en" observer="recordChange" data-dojo-type="app.uicomponents.Editor"></div>
+			</div>
+			<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="title: 'French'" style="padding: 0; margin-top: -1px;">
+				<div data-dojo-attach-point="test_req_instr_fr" name="test_req_instr_fr" observer="recordChange" data-dojo-type="app.uicomponents.Editor"></div>
+			</div>
+		</div>
+	</form>
+
+	
+</div>

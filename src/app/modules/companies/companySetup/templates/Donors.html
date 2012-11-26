@@ -1,0 +1,45 @@
+<div>
+	
+	<div style="position: absolute; top: 25px;">
+		<div class="floatLeft" style="margin-bottom: 10px;" data-dojo-type="dijit.form.Button" data-dojo-attach-point="configureTemplateBtn" iconClass="dijitIconEditTask" data-dojo-attach-point="configureTemplateBtn">
+    	    Donor Template
+    	</div>
+		<div class="floatLeft" style="margin-bottom: 10px;" data-dojo-type="dijit.form.Button" data-dojo-attach-point="importDonorsBtn" iconClass="dijitIconTable" data-dojo-attach-point="importDonorsBtn">
+    	    Import Donors
+    	</div>
+    </div>
+	
+	<div data-dojo-attach-point="donorGrid" class="activatable" data-dojo-type="app.modules.companies.companySetup.donors.DonorGrid"></div>	
+	
+	<div class="floatLeft">
+		<h3 style="margin-top: 10px;">Post PRE</h3>
+		<table cellpadding="10" cellspacing="0" style="padding-left: 10px;">
+			<tr>
+				<td style="vertical-align: middle;">
+					<input type="checkBox" name="add_to_random_DOT" data-dojo-attach-point="add_to_random_DOT" value="1" dojoType="dijit.form.CheckBox" /> 
+					<label for="add_to_random_DOT">Add to random (DOT)</label>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: middle;">
+					<input type="checkBox" name="add_to_random_non_DOT" data-dojo-attach-point="add_to_random_non_DOT" value="1" dojoType="dijit.form.CheckBox" /> 
+					<label for="add_to_random_non_DOT">Add to random (non DOT)</label>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="floatLeft" style="margin-left: 80px;">
+		<h3 style="margin-top: 10px;">Other Settings</h3>
+		<table cellpadding="10" cellspacing="0" style="padding-left: 10px;">
+			<tr>
+				<td style="vertical-align: middle;">
+					<input type="checkBox" name="use_SIN" data-dojo-attach-point="use_SIN" value="1" dojoType="dijit.form.CheckBox" /> 
+					<label for="use_SIN">Use SIN</label>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div>
+		

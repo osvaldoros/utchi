@@ -1,0 +1,12 @@
+<div class="dc_dialog" style="padding-top: 0;">
+	<form class="pad10" dojoType="app.form.Manager" style="width:100%; height:215px; padding:0;" data-dojo-attach-point="notesForm" method="post">
+		<div data-dojo-attach-point="_notes" name="_notes" data-dojo-type="app.uicomponents.Editor" data-dojo-props="editorHeight:'100%;'" observer="recordChange" style="width:100%; height:150px;" ></div>
+	</form>
+	
+	<div class="edgePanel">
+		<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_actionBtn" style="margin-bottom:5px;">New note</div>	
+		<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_cancelBtn" style="margin-bottom:5px;">Cancel</div>	
+	</div>
+
+	<div data-dojo-attach-point="_noteCollection" style="width:100%; padding:0; margin:0;"></div>
+</div>

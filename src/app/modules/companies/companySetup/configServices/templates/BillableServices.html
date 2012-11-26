@@ -1,0 +1,25 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'" style="width: 250px; padding-bottom: 10px;">
+	<h3>Billable services</h3>
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="billableServicesForm" method="post">
+		<table cellpadding="10" cellspacing="0">
+			<tr>
+				<td rowspan="5" style="padding-right: 20px"><input type="checkBox" name="full_test" observer="refreshUI" data-dojo-attach-point="full_test" value="true" dojoType="dijit.form.CheckBox" /> <label>Full Test</label></td>
+				<td></td>
+			</tr>
+			
+			<tr class="secondayColoredBackground">
+				<td><input type="checkBox" name="services[x].collection" value="true" data-dojo-attach-point="collectionBox" observer="recordChange, refreshUI" dojoType="dijit.form.CheckBox" /> <label>Collection</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkBox" name="services[x].lab" value="true" data-dojo-attach-point="labBox" observer="recordChange, refreshUI" dojoType="dijit.form.CheckBox" /> <label>Lab</label></td>
+			</tr>
+			<tr class="secondayColoredBackground">
+				<td><input type="checkBox" name="services[x].courier" value="true" data-dojo-attach-point="courierBox" observer="recordChange, refreshUI" dojoType="dijit.form.CheckBox" /> <label>Courier</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkBox" name="services[x].mro" value="true" data-dojo-attach-point="mroBox" observer="recordChange, refreshUI" dojoType="dijit.form.CheckBox" /> <label>MRO</label></td>
+			</tr>
+		</table>
+	</form>
+	
+</div>

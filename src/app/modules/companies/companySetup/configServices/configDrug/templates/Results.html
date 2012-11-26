@@ -1,0 +1,43 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="drugResultsForm" method="post">
+		<h3 style="margin-top: 10px;">MRO Procedure</h3>
+		<textarea name="services[x].mro_proc" style="width:250px;" observer="recordChange" data-dojo-type="dijit.form.Textarea"></textarea>
+		
+		<h3 style="margin-top: 10px;">Mail Instructions</h3>
+		<textarea name="services[x].mail_instr" style="width:250px;" observer="recordChange" data-dojo-type="dijit.form.Textarea"></textarea>
+		
+		<h3 style="margin-top: 10px;">Is it policy to retest dilutes?</h3>
+		<fieldset style="margin-left: 10px;" class="dijitInline">
+			<input type="radio" name="services[x].policy_retest_dilute" observer="recordChange" data-dojo-attach-point="policy_retest_dilute_yes" value="true" dojoType="dijit.form.RadioButton" /><label for="retest_dilutes_yes">Yes</label>
+			<input type="radio" name="services[x].policy_retest_dilute" observer="recordChange" data-dojo-attach-point="policy_retest_dilute_no" value="false" dojoType="dijit.form.RadioButton" /><label for="retest_dilutes_no">No</label>
+		</fieldset>
+		
+		
+		<h3 style="margin-top: 10px;">Is it policy to test DOT PRE Alcohol?</h3>
+		<fieldset style="margin-left: 10px;" class="dijitInline">
+			<input type="radio" name="services[x].policy_test_dot_pre_alc" observer="recordChange" data-dojo-attach-point="policy_test_dot_pre_alc_yes" value="true" dojoType="dijit.form.RadioButton" /><label for="dot_pre_alch_policy_yes">Yes</label>
+			<input type="radio" name="services[x].policy_test_dot_pre_alc" observer="recordChange" data-dojo-attach-point="policy_test_dot_pre_alc_no" value="false" dojoType="dijit.form.RadioButton" /><label for="dot_pre_alch_policy_no">No</label>
+		</fieldset>
+	
+		<table cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="width: 100px;">
+					<label for="default_lab">Lab</label>
+				</td>
+				<td>
+					<select class="floatRight" data-dojo-attach-point="default_lab" observer="recordChange" name="services[x].default_lab" $ref="lab" dojoType="app.form.FilteringSelect" value="" autocomplete="true"></select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="default_mro">MRO</label>
+				</td>
+				<td>
+					<select class="floatRight" data-dojo-attach-point="default_mro" observer="recordChange" name="services[x].default_mro" $ref="mro" dojoType="app.form.FilteringSelect" value="" autocomplete="true"></select>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</div>

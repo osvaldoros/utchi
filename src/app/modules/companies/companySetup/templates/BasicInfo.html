@@ -1,0 +1,79 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	
+	<form dojoType="app.form.Manager" data-dojo-attach-point="companyBasicInfoForm" method="post">
+		<table cellpadding="0" cellspacing="2">
+			<tr>
+				<td label="true">Name*: </td>
+				<td><input type="text" required="true" name="name" observer="recordChange" placeholder="Acme Company Inc" tabindex="1" dojoType="dijit.form.ValidationTextBox" missingMessage="Ooops!  You forgot the company name" /></td>
+				<td ></td>
+				<td vertical-align="top" rowspan="7">
+					<div data-dojo-attach-point="loc" name="loc" observer="recordChange" data-dojo-type="app.uicomponents.Map" tabindex="17" class="floatRight"></div>
+				</td>
+			</tr>
+			<tr>
+				<td  label="true">Phone: </td>
+				<td><input type="text" name="phone" data-dojo-attach-point="phone" observer="recordChange" placeholder="1 (123) 456 7890" tabindex="2" dojoType="dijit.form.TextBox" /></td>
+	        </tr>
+			<tr>
+				<td  label="true">Fax: </td>
+				<td><input type="text" name="fax" data-dojo-attach-point="fax" observer="recordChange" placeholder="1 (123) 456 7890" tabindex="3" dojoType="dijit.form.TextBox" /></td>
+	        </tr>
+			<tr>
+				
+			</tr>
+			<tr>
+				<td  label="true">Membership received:  </td>
+				<td><input type="text" name="membership_received" data-dojo-attach-point="membership_received" observer="recordChange" tabindex="4" dojoType="dijit.form.DateTextBox" value="7/5/1983" /></td>
+			</tr>
+			<tr>
+				<td  label="true">Industry:  </td>
+				<td><input type="text" name="industry" data-dojo-attach-point="industry" observer="recordChange" dojoType="dijit.form.TextBox" tabindex="5" /></td>
+			</tr>
+			<tr>
+			</tr>
+			
+	        <tr>
+				<td  label="true">Address:  </td>
+				<td><input type="text" name="street1" data-dojo-attach-point="street1" observer="recordChange, refreshUI" tabindex="6" placeholder="Street" dojoType="dijit.form.TextBox" /></td>
+				<td><input type="text" name="city" data-dojo-attach-point="city" placeholder="City" observer="recordChange, refreshUI" tabindex="7" dojoType="dijit.form.TextBox" /></td>
+			</tr>
+			<tr>
+				<td ></td>
+				<td>
+					<select data-dojo-attach-point="province" name="province" data-dojo-attach-point="province" observer="recordChange, refreshUI"  tabindex="8" dojoType="app.form.FilteringSelect" maxHeight="200"></select>
+				</td>
+				<td><input type="text" name="country" data-dojo-attach-point="country" placeholder="Country" observer="recordChange, refreshUI"  tabindex="9" dojoType="dijit.form.TextBox" /></td>
+	        </tr>
+			
+			<tr>
+				<td  label="true">Mailing Address:  </td>
+				<td><input type="text" name="mail_street1" data-dojo-attach-point="mail_street1" observer="recordChange" tabindex="10" placeholder="Street" dojoType="dijit.form.TextBox" /></td>
+				<td><input type="text" name="mail_city" data-dojo-attach-point="mail_city" observer="recordChange" tabindex="11" placeholder="City" dojoType="dijit.form.TextBox" /></td>
+			</tr>
+			<tr>
+				<td ></td>
+				<td>
+					<select data-dojo-attach-point="mail_province" name="mail_province" data-dojo-attach-point="mail_province" observer="recordChange" tabindex="12" dojoType="app.form.FilteringSelect" maxHeight="200"></select>
+				</td>
+				<td><input type="text" name="mail_country" data-dojo-attach-point="mail_country" observer="recordChange" tabindex="13" placeholder="Country" dojoType="dijit.form.TextBox" /></td>
+	        </tr>
+			<tr>
+			</tr>
+			<tr>
+				<td  label="true">Hear about us:  </td>
+				<td><input type="text" name="hear_aboutus" data-dojo-attach-point="hear_aboutus" observer="recordChange" dojoType="dijit.form.TextBox" tabindex="14" /></td>
+			</tr>
+			<tr>
+				<td  label="true">Sales Rep:  </td>
+				<td ><input type="text" name="sales_rep" value="John Smith" observer="recordChange" tabindex="15" disabled="disabled" data-dojo-attach-point="sales_rep" dojoType="dijit.form.TextBox" /></td>
+				<td >
+					<div data-dojo-type="dijit.form.Button" data-dojo-attach-point="salesRepButton" iconClass="dijitIconUsers" tabindex="16">
+				    	Edit
+					</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	
+</div>

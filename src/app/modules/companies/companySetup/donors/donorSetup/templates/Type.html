@@ -1,0 +1,40 @@
+<div class="moduleContainer" class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+	
+	<form class="pad10" dojoType="app.form.Manager" data-dojo-attach-point="donorTypeForm" method="post">
+			
+		<h3 style="margin-top: 20px;">Regimen</h3>
+		<table cellpadding="10" cellspacing="10">
+			<tr>
+				<td><input type="checkBox" name="dot" value="true" dojoType="dijit.form.CheckBox" observer="recordChange" /> <label for="it">DOT</label></td>
+				<td valign="top"></td>
+			</tr>
+		</table>	
+		
+		<h3 style="margin-top: 20px;">Agency</h3>
+		<table cellpadding="10" cellspacing="10">
+			<tr>
+				<!--
+				<td>
+					<select class="floatRight"  data-dojo-attach-point="agencyCombo" name="agency_id"  style="width: 100px;" dojoType="app.form.FilteringSelect"></select>
+				</td> 
+				-->
+				<td><input type="checkBox" name="FAA" value="1" data-dojo-attach-point="faaBox" dojoType="dijit.form.CheckBox" observer="refreshUI" /> <label for="it">FAA</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="FMCSA" value="2" data-dojo-attach-point="fmcsaBox" dojoType="dijit.form.CheckBox" observer="refreshUI" /> <label for="it">FMCSA</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="FRA" value="3" data-dojo-attach-point="fraBox" dojoType="dijit.form.CheckBox" observer="refreshUI" /> <label for="it">FRA</label></td>
+				<td valign="top"></td>
+			</tr>
+			<tr>
+				<td><input type="checkBox" name="FTA" value="4" data-dojo-attach-point="ftaBox" dojoType="dijit.form.CheckBox" observer="refreshUI" /> <label for="it">FTA</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="PHMSA" value="5" data-dojo-attach-point="phmsaBox" dojoType="dijit.form.CheckBox" observer="refreshUI" /> <label for="it">PHMSA</label></td>
+				<td valign="top"></td>
+				<td><input type="checkBox" name="USCG" value="6" data-dojo-attach-point="uscgBox" dojoType="dijit.form.CheckBox" observer="refreshUI" /> <label for="it">USCG</label></td>
+				<td valign="top"></td>
+			</tr>
+		</table>	
+	
+	</form>
+	
+</div>

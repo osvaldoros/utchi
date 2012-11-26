@@ -1,0 +1,35 @@
+<div class="moduleContainer">
+
+	<div data-dojo-attach-point="leftPanel" style="float:left; width:450px;">
+		<h1 data-dojo-attach-point="storyTitle" style="font-weight:bold;">Type in a story </h1>
+		<br/>
+		<div style="font-size:medium; width:400px;" data-dojo-attach-point="storyContent" data-dojo-type="dijit.layout.ContentPane"></div>
+	</div>
+
+	<div data-dojo-attach-point="rightPanel" style="float:left; width:600px; padding-left:10px; padding-top:5px;">
+		<h1 style="padding-bottom:5px; float:left;">Narrations</h1>
+		<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_recordBtn">
+    	    Record Narration
+    	</div>
+		<div style="width:100%; background-color:#000000; clear:both;">
+			<div id="flashContainer" style="width:320px; margin-left:auto; margin-right:auto;">
+				<h1>Seems like you don't have flash player installed</h1>
+				<h3>Unfortunately you need flash to record and playback stories</h3>
+				<a href="http://get.adobe.com/flashplayer/"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
+			</div>
+		</div>
+		<div data-dojo-attach-point="thumbContainer"></div>
+
+		<h1 style="padding-bottom:5px; float:left; clear:both; margin-top:20px;">Comments</h1>
+		<div class="floatRight" data-dojo-type="dijit.form.Button" data-dojo-attach-point="_commentBtn">
+    	    Add Comment
+    	</div>
+		<div data-dojo-attach-point="commentContainer" style="clear:both;"></div>
+
+
+	</div>
+
+	
+	
+</div>
+		

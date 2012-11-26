@@ -1,0 +1,25 @@
+<div class="moduleContainer" style="width: 750px;">
+	
+	<div class="floatRight" style="clear: left; padding-bottom: 10px;">
+		<input type="text" required="true" class="floatRight" name="searchFld" data-dojo-attach-point="searchFld"  placeholder="search" dojoType="dijit.form.TextBox" />
+    </div>
+	
+	
+ 	<table id="searchGrid" data-dojo-type="dgrid.Grid" data-dojo-attach-point="searchGrid" style="clear: both;">
+		<tr>
+			<th data-dgrid-column="{field:'id', sortable:true}">Id</th>
+			<th data-dgrid-column="{field:'name', sortable:true}">Name</th>
+			<th data-dgrid-column="{field:'phone', sortable:true}">Phone</th>
+			<th data-dgrid-column="{field:'city', sortable:false}">City</th>
+		</tr>
+	</table>
+		
+	<div class="centerPanel" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'">
+		<div class="floatRight permissions" data-dojo-type="dijit.form.Button" data-dojo-attach-point="selectButton">
+    	    Select
+    	</div>
+    	<div class="floatLeft permissions" data-dojo-type="dijit.form.Button" data-dojo-attach-point="cancelButton">
+    	    Cancel
+    	</div>
+    </div>
+</div>

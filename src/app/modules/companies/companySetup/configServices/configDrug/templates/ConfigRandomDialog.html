@@ -1,0 +1,40 @@
+<div class="dc_dialog">
+	
+	<form class="pad10" dojoType="dijit.form.Form" data-dojo-attach-point="configureRandomForm" method="post">
+		<h3>Random Programs</h3>
+		<table cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="width: 100px;">
+					<label for="collection">DOT Program</label>
+				</td>
+				<td>
+					<select class="floatRight" data-dojo-attach-point="dot_pool" data-dojo-attach-point="dot_pool" dojoType="dijit.form.ComboBox">
+						<option>DOT</option>
+						<option>A+ 2012</option>
+						<option selected="selected">General</option>
+						<option>C Pool 2012</option>
+						<option>Singles</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lab">Non DOT Program</label>
+				</td>
+				<td>
+					<select class="floatRight" data-dojo-attach-point="non_dot_pool" data-dojo-attach-point="non_dot_pool" dojoType="dijit.form.ComboBox">
+						<option>Imperial Oil Contractors</option>
+						<option>IOL Sales Associates</option>
+						<option selected="selected">Non-DOT 2012</option>
+						<option>Singles non-DOT</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	
+		<button class="floatRight pad10" dojoType="dijit.form.Button" data-dojo-attach-point="submitRandomButton" data-dojo-attach-point="submitRandomButton">Submit</button>
+	</form>
+
+	
+</div>	
+	
